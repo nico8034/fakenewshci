@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}  
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100%;
+    min-height: 700px;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+a{
+    border: none;
+    text-decoration: none;
+    color: inherit;
+}
+a h1:hover{
+    color: #009AFF;
+}
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: #D76A5F;
+    display: flex;
+    align-items: center;
+}
+.headline{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 30px;
+}
+.main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.content{
+    width: 85%;
+    padding: 20px 30px;
+    overflow-y: scroll;
+}
+.navigation{
+    width: 15%;
+    background-color: #464646;
+    border-left: 10px solid #009AFF;
+    padding: 20px;
+    overflow-y: auto;
+}
+.navigation ul{
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+.navigation ul li{
+    padding: 5px;
+    font-weight: normal;
+}
+.navigation ul a{
+    display: none;
+}
+.navigation ul li:hover{
+    color:lightgray;
+}
+.li-header{
+    font-weight: bold !important;
+    font-size: 22px;
+    border-bottom: 3px solid #d76a5f;
+}
+.streams-wrapper{
+}
+.recommended-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header2{
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+}
+.stream-header{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.stream-item{
+    cursor: pointer;
+    width: 380px;
+    min-width: 240px;
+    height: 230px;
+    min-height: 150px;
+    margin-bottom: 40px;
+}
+.stream-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stream-item img:hover{
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.col30{
+    width: 30%;
+}
+.col33{
+    width: 33%;
+}
+.col40{
+    width: 40%;
+}
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+}
+.end{
+    justify-content: flex-end;
+}
+.between{
+    justify-content: space-between;
+}
+.a-center{
+    align-items: center;
+}
+.search{
+    width: 100%;
+}
+.search input{
+    border-radius: 2px;
+    height: 35px;
+    width: 100%;
+    min-width: 330px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding: 0 4px;
+    font-style: italic;
+    margin-right: 10px;
+    border: 3px solid transparent;
+}
+.search input:focus{
+    border: 3px solid #009AFF;
+    border-color: #009AFF;
+}
+.search button{
+    padding: 2px 15px;
+    background-color: gray;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: lightgray;
+    cursor: pointer;
+}
+.serach button:hover{
+    cursor: pointer;
+}
+.login{
+  width: 65px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #009AFF;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 30px;
+
+}
+.login:hover{
+    background-color: #eeeeee;
+    color: #000;
+}
+
+.stream-section{
+    width: 70%;
+    
+}
+.stream-section img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.stream-section p{
+    font-weight: normal;
+}
+
+.factchecker-section{
+    width: 25%;
+    background-color: #99AFBE;
+    border-radius: 2px;
+    padding: 10px;
+    overflow-y: auto;
+   
+}
+#loggedInAs{
+    padding-right: 10px;
+    color: #fff;
+    font-style: italic;
+    display: none;
+}
+.span-name{
+    color: #009AFF;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #eeeeee;
+    padding: 0px 6px;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+/*  Factchecker elements styling */
+.factchecker-item{
+    background-color: #ECF0F1;
+    border-radius: 2px;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.fact-timestamp, .fact-candidate{
+    font-weight: bold;
+    font-size: 16px;
+}
+.fact-assertion, .fact-correction{
+    font-weight: normal;
+}
+.fact-timestamp, .fact-assertion, .fact-correction{
+    margin-bottom: 5px;
+}
+.fact-correction{
+    margin-bottom: 15px;
+}
+
+.fact-source{
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-weight: bold;
+    color: #009AFF;
+}
+iframe {
+    max-width: 100% !important;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
